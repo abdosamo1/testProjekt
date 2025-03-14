@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Mountain</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "PT Sans", serif;
+        }
+
+        .aot {
+            background-image: url(./img/header.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            font-size: larger;
+        }
+
+        header {
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        header img {
+            width: 104px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .navLinks {
+            font-size: medium;
+            text-decoration: none;
+            color: white;
+            margin-left: 16px;
+        }
+
+        .navLinks:hover {
+            color: #a77f43;
+        }
+
+        .navImg {
+            height: 24px;
+            width: auto;
+            margin-left: 16px;
+        }
+
+        .navImg:hover {
+            filter: drop-shadow(0px 0px 4px #a77f43);
+            cursor: pointer;
+        }
+
+        h1 {
+            font-size: 88px;
+            margin: 0;
+            font-family: "Viga", serif;
+        }
+
+        p {
+            font-size: 32px;
+            margin: 0;
+            margin-bottom: 16px;
+        }
+
+        button {
+            background-color: #a77f43;
+            font-size: 16px;
+            padding: 16px;
+            border-color: #a77f43;
+            color: white;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        .quicklink-section {
+            background-color: #0e0e0e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 48px;
+            padding: 80px 40px;
+        }
+
+        .quicklinks {
+            color: #a77f43;
+            font-size: 24px;
+            text-decoration: none;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            margin: 0;
+        }
+
+        .quicklinks img {
+            height: 240px;
+            object-fit: cover;
+            margin-top: 16px;
+        }
+
+        .upcoming-show {
+            background-color: #272727;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            padding-right: 24px;
+        }
+
+        .upcoming-show img {
+            height: 320px;
+            object-fit: cover;
+        }
+
+
+        .vl {
+            border-left: 2px solid #4f4f4f;
+            height: 240px;
+        }
+
+        .upcoming-show-details {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            flex: 1;
+        }
+
+        .festival-description,
+        span {
+            font-size: 16px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: normal;
+            margin: 0;
+            padding-bottom: 16px;
+        }
+
+        .slogan-section {
+            padding: 80px 40px;
+            color: #a77f43;
+            text-align: center;
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        .viedo-section {
+            background-image: url(./img/bottom.png);
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        footer{
+            background-color: black;
+            padding: 80px 40px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .half-width{
+            width: 50%;
+        }
+
+        .footer-left {
+            color: white;
+            font-size: 24px;
+            font-weight: 600;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .footer-right{
+            display: flex;
+            
+            flex-direction: column;
+            gap: 16px;
+        }
+
+
+        .social-media-icons {
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+        }
+
+        .social-media-icons img{
+            height: 32px;
+            object-fit: cover;
+        }
+
+        form{
+            display: flex;
+            
+        }
+
+        input {
+            padding: 16px;
+            flex: 1;
+        }
+        input::placeholder{
+            color: #929191;
+            font-family: "PT Sans", serif;
+            font-size: large;
+        }
+        .submition-button{
+            width: 240px;
+            font-size: large;
+            font-family: "PT Sans", serif;
+        }
+
+    </style>
+
+
+    <!-- Font Links -->
+
+    <!-- Viga -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <!-- font-family: "Viga", serif; -->
+
+
+    <!-- PT Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- font-family: "PT Sans", serif; -->
+
+</head>
+
+<body>
+    <div class="aot">
+        <header>
+            <img src="./img/logo.png" alt="band logo">
+            <nav>
+                <a href="#" class="navLinks">HOME</a>
+                <a href="#" class="navLinks">LOCATION</a>
+                <a href="#" class="navLinks">ABOUT</a>
+                <a href="#" class="navLinks">CONTACT</a>
+                <img src="./img/facebook_white.png" alt="facebook_white" class="navImg">
+                <img src="./img/instagram_white.png" alt="instagram_white" class="navImg">
+                <img src="./img/twitter_white.png" alt="twitter_white" class="navImg">
+            </nav>
+        </header>
+        <h1>ROCK MOUNTAIN</h1>
+        <p>Discover the best live Music</p>
+        <button> UPCOMING SHOW</button>
+    </div>
+    <div class="quicklink-section">
+        <a href="" class="quicklinks">
+            NEWS
+            <img src="./img/category1.png" alt="">
+        </a>
+        <a href="" class="quicklinks">
+            ALBUM
+            <img src="./img/category2.png" alt="">
+        </a>
+        <a href="" class="quicklinks">
+            STORE
+            <img src="./img/category3.png" alt="">
+        </a>
+    </div>
+    <div class="upcoming-show">
+        <img src="./img/p5.png" alt="p5">
+        <div class="upcoming-show-details">
+            <span> 27 Sep 20</span>
+            <h2> 31 State Festival</h2>
+            <p class="festival-description"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio voluptas et
+                iste aperiam similique libero unde suscipit veritatis modi dolores voluptate repellat mollitia eum
+                provident a commodi laboriosam, eaque explicabo.</p>
+        </div>
+        <div class="vl"></div>
+        <button>BUY TICKET</button>
+    </div>
+    <div class="slogan-section">
+        FOLLW AND LISTEN TO THIS PLAYLIST TO <br> GET PREPEARED FOR THE SHOW!
+    </div>
+    <div class="viedo-section">
+    </div>
+    <footer>
+        <div class="footer-left half-width">SUBSCRIBE & FOLLOW TO GET UPDATES FROM ROCK MOUNTAIN!</div>
+        <div class="footer-right half-width">
+            <div class="social-media-icons">
+                <img src="./img/Facebook.png" alt="facebook" class="footer-imges">
+                <img src="./img/ins.png" alt="instagram" class="footer-imges">
+                <img src="./img/twitter.png" alt="twitter" class="footer-imges">
+            </div>
+            <form>
+                <input required type="email" placeholder="Email Address">
+                <button class="submition-button">SUBMIT</button>
+            </form>
+        </div>
+    </footer>
+
+</body>
+
+</html>

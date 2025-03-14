@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../../Downloads/Kochwelt-20250120T030058Z-001/Kochwelt/Kochwelt/Rezeptseite.css">
+</head>
+
+<body>
+
+    <main class="recipe">
+
+        <section class="recipeHeaderSection">
+            <h1 id="recipeTitel">Gemüsepfanne</h1>
+            <img src="./images/croissant.jpg" alt="">
+            <div class="characteristicContainer">
+                <div class="characteristic">
+                    <img src="../../../Downloads/Kochwelt-20250120T030058Z-001/Kochwelt/Kochwelt/icons/clock-regular.svg" alt="">
+                    <p>23 Minuten</p>
+                </div>
+                <div class="characteristic">
+                    <img src="../../../Downloads/Kochwelt-20250120T030058Z-001/Kochwelt/Kochwelt/icons/brain-solid.svg" alt="">
+                    <p>Einfach</p>
+                </div>
+                <div class="characteristic">
+                    <img src="../../../Downloads/Kochwelt-20250120T030058Z-001/Kochwelt/Kochwelt/icons/calendar-alt-regular.svg" alt="">
+                    <p>16.01.2025</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="recipeIngredientSection">
+            <div class="portionForm">
+                <p>Zutaten für: </p>
+                <div class="portionFormInput">
+                    <input type="number" value="1" id="portionInput" oninput="checkPortions()">
+                    <div class="buttons">
+                        <button class="portionButton" onclick="increasePortions()">+</button>
+                        <button class="portionButton" onclick="decreasePortions()">-</button>
+                    </div>
+                </div>
+                <p>Portionen</p>
+            </div>
+
+            <div>
+                <h2>Zutaten:</h2>
+                <ul class="ingredientsList" id="ingredientsList">
+                    
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="recipePreparationSection">
+            <h2>Zubereitung:</h2>
+            <div class="characteristicContainer">
+                <div class="characteristic">
+                    <img src="../../../Downloads/Kochwelt-20250120T030058Z-001/Kochwelt/Kochwelt/icons/clock-regular.svg" alt="">
+                    <p>23 Minuten</p>
+                </div>
+                <div class="characteristic">
+                    <img src="../../../Downloads/Kochwelt-20250120T030058Z-001/Kochwelt/Kochwelt/icons/clock-regular.svg" alt="">
+                    <p>30 Minuten Gesamt</p>
+                </div>
+            </div>
+
+            <div class="preparationStepListContainer">
+                <ol class="preparationStepList">
+                    <li>
+                        <h3>1. Schritt</h3>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet..</p>
+                    </li>
+                    <li>
+                        <h3>2. Schritt</h3>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet..</p>
+                    </li>
+                    <li>
+                        <h3>3. Schritt</h3>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet..</p>
+                    </li>
+                    <li>
+                        <h3>4. Schritt</h3>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet..</p>
+                    </li>
+                    <li>
+                        <h3>5. Schritt</h3>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet..</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="madeBySection"> 
+            <h4>Rezept erstellt von:</h4>
+            <div class="authorContainer">
+                <img src="./images/profile.png" alt="Profilbild des Autors">
+                <p>Lucas Hamacher</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+<script src="../../../Downloads/Kochwelt-20250120T030058Z-001/Kochwelt/Kochwelt/calculate.js"></script>
+
+</html>

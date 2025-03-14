@@ -1,0 +1,227 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    gap: 300px;
+    box-shadow: 0px 3px 15px 5px #cccccc;
+}
+
+.linkLogoSmallScreen {
+    display: none;
+}
+
+.logoSmallScreen {
+    display: none;
+    width: 200px;
+}
+
+header img {
+    width: 200px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    top: 30px;
+    height: 50px;
+}
+
+.link:hover {
+    /*  border-bottom: 5px solid #008000; */
+    text-decoration: underline;
+    text-decoration-color: rgb(105, 164, 17);
+    text-decoration-thickness: 5px;
+    text-underline-offset: 8px;
+    padding-bottom: 10px;
+}
+
+.active {
+    text-decoration: underline;
+    text-decoration-color: rgb(105, 164, 17);
+    text-decoration-thickness: 5px;
+    text-underline-offset: 8px;
+    padding-bottom: 10px;
+}
+
+.dropdown {
+    display: none;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 300px;
+    height: 100px;
+    background-color: rgb(77, 76, 76);
+}
+
+.footerLogo {
+    height: 60px;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.footerSocials {
+    display: flex;
+    gap: 20px;
+}
+
+.socials {
+    width: 30px;
+    height: 30px;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+}
+
+.socials:hover {
+    -webkit-filter: invert(100%);
+    filter: drop-shadow(0px 0px 4px #ffffff);
+}
+
+@media (max-width: 1100px) {
+    header {
+        gap: 200px;
+    }
+}
+
+@media (max-width: 970px) {
+    header {
+        gap: 250px;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .dropdown {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        gap: 10px;
+    }
+
+    .dropdownContent {
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 360px;
+        top: 80px;
+        right: 0;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 20px 26px;
+        z-index: 1;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-10px);
+        transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+    }
+
+    .dropdownContent a {
+        display: block;
+        padding: 10px 15px;
+    }
+
+    .dropdown:hover .dropdownContent {
+        display: block;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .dropdownButton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: center;
+        border: none;
+        padding: 0;
+        gap: 8px;
+        background-color: white !important;
+    }
+
+    .dropdownButton:hover {
+        cursor: pointer;
+    }
+
+    .dropdown.active .dropdownButton + .dropdownContent {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .line {
+        background-color: black;
+        height: 1px;
+        width: 40px;
+        border-bottom: 1px solid black;
+    }
+}
+
+@media (max-width: 750px) {
+    header {
+        gap: 200px;
+    }
+
+    footer {
+        gap: 150px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        gap: 50px;
+    }
+
+    header img {
+        display: none;
+    }
+
+    .linkLogoSmallScreen {
+        display: block;
+    }
+
+    .logoSmallScreen {
+        display: block;
+        width: 45px;
+    }
+
+    .dropdownContent {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 100px;
+        top: 80px;
+        right: 0;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 1px 6px;
+        z-index: 1;
+    }
+
+    footer {
+        gap: 100px;
+    }
+
+    .footerLogo {
+        display: none;
+    }
+
+    .footerLogoSmallScreen {
+        -webkit-filter: invert(100%);
+        filter: invert(100%);
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+
+        gap: 0px;
+    }
+
+    .dropdown {
+        position: relative;
+        left: 20px;
+    }
+}

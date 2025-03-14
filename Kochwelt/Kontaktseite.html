@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/standards.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./contact.css" />
+    <script src="script.js"></script>
+    <script src="./contact.css"></script>
+    <link rel="icon" type="img/x-icon" href="./img/logo_small.png" />
+    <link href="fonts/raleway.css" rel="stylesheet" />
+</head>
+<body>
+<header>
+    <a class="linkLogoSmallScreen" href="./Kochwelt.html"><img class="logoSmallScreen" src="./img/logo_small.png" alt="" /></a>
+    <a href="./Kochwelt.html">      <img src="./img/logo.png" alt="" /></a>
+
+    <div class="links">
+        <a class="link active" href="./Kochwelt.html">Start</a>
+        <a class="link" href="./Rezept1.html">Rezept des Tages</a>
+        <a class="link" href="./Kontaktseite.html">Kontakt</a>
+        <a class="link" href="">Impressum</a>
+    </div>
+    <div class="dropdown" data-dropdown>
+        <button class="dropdownButton" data-dropdown-button>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </button>
+
+        <div class="dropdownContent">
+            <a class="link " href="./Kochwelt.html">Start</a>
+            <a class="link" href="./Rezept1.html">Rezept des Tages</a>
+            <a class="link" href="./Kontaktseite.html">Kontakt</a>
+            <a class="link" href="">Impressum</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="positionContact">
+        <div class="contactLayout">
+            <div class="contactField">
+                <h1>Kontaktiere uns</h1>
+
+                <form onsubmit="sendMail(event)" class="contactInput">
+                    <label for="name"> Dein Name</label>
+                    <input id="name" type="text" required />
+
+                    <label for="email">Deine E-Mail</label>
+                    <input id="email" type="text" required />
+                    <label for="nachricht">Deine Nachricht</label>
+                    <textarea
+                            name="Nachricht"
+                            id="nachricht"
+                            class="nachricht"
+                    ></textarea>
+
+                    <div class="contactButton">
+                        <input type="submit" value="Absenden" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <img
+            class="logoSmallScreen footerLogoSmallScreen"
+            src="./img/logo_small.png"
+            alt=""
+    />
+    <img class="footerLogo" src="./img/logo.png" alt="" />
+    <div class="footerSocials">
+        <a href="https://www.facebook.com/" target="_blank"
+        ><img class="socials" src="./img/facebook_icon.png" alt="" />
+        </a>
+        <a href="https://www.instagram.com/" target="_blank"
+        ><img class="socials" src="./img/instagram_icon.png" alt="" />
+        </a>
+        <a href="https://x.com/home" target="_blank"
+        ><img class="socials" src="./img/twitter_icon.png" alt="" />
+        </a>
+    </div>
+</footer>
+</body>
+</html>

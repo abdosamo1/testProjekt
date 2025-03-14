@@ -1,0 +1,8 @@
+#numberOne { background : #0e0e0e}
+h1 { background: #0e0e0e;
+    color: #2c5dd9; }
+body { background: #0e0e0e; height: 100vh; color: blue; font-size:20px;}
+.d_none { display: none; transition: height 2s ease-in-out; transform-style: preserve-3d}
+#myInput {
+    width: 300px;
+}

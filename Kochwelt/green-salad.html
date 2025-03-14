@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Salat</title>
+    <link rel="stylesheet" href="./Rezeptseite.css">
+
+    <!-- Add favicon -->
+    <link rel="icon" type="img/x-icon" href="./img/logo_small.png" />
+
+</head>
+
+<body>
+
+    <main class="recipe">
+
+        <section class="recipeHeaderSection">
+            <h1 id="recipeTitel">Green Salat</h1>
+            <img src="./img/Avocado-Lettuce-Fetta-Salad.png" alt="green-salad">
+            <div class="characteristicContainer">
+                <div class="characteristic">
+                    <img src="./icons/clock-regular.svg" alt="">
+                    <p>10 Minuten</p>
+                </div>
+                <div class="characteristic">
+                    <img src="./icons/brain-solid.svg" alt="brain">
+                    <p>Einfach</p>
+                </div>
+                <div class="characteristic">
+                    <img src="./icons/calendar-alt-regular.svg" alt="calender">
+                    <p>20.01.2025</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="recipeIngredientSection">
+            <div class="portionForm">
+                <p>Zutaten für: </p>
+                <div class="portionFormInput">
+                    <input type="number" value="1" id="portionInput" oninput="checkPortions()">
+                    <div class="buttons">
+                        <button class="portionButton" onclick="increasePortions()">+</button>
+                        <button class="portionButton" onclick="decreasePortions()">-</button>
+                    </div>
+                </div>
+                <p>Portionen</p>
+            </div>
+
+            <div>
+                <h2>Zutaten:</h2>
+                <ul class="ingredientsList" id="ingredientsList">
+
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="recipePreparationSection">
+            <h2>Zubereitung:</h2>
+            <div class="characteristicContainer">
+                <div class="characteristic">
+                    <img src="./icons/clock-regular.svg" alt="">
+                    <p>10 Minuten</p>
+                </div>
+                <div class="characteristic">
+                    <img src="./icons/clock-regular.svg" alt="">
+                    <p>15 Minuten Gesamt</p>
+                </div>
+            </div>
+
+            <div class="preparationStepListContainer">
+                <ol class="preparationStepList">
+                    <li>
+                        <h3>1. Schritt</h3>
+                        <p>Der Mais vom Dose rausmachen und gut mit wasser waschen.</p>
+                    </li>
+                    <li>
+                        <h3>2. Schritt</h3>
+                        <p>Die Tomaten in kleine Stücke schneiden.</p>
+                    </li>
+                    <li>
+                        <h3>3. Schritt</h3>
+                        <p>Die Gurke in kleine Scheiben schneiden.</p>
+                    </li>
+                    <li>
+                        <h3>4. Schritt</h3>
+                        <p>Der Salat in einer Schale machen.</p>
+                    </li>
+                    <li>
+                        <h3>5. Schritt</h3>
+                        <p>Mit dem Mais, der Tomaten und der Gurken mischen.</p>
+                    </li>
+                    <li>
+                        <h3>6. Schritt</h3>
+                        <p>Die geriebene Karotten, die Rucola, das Mehrkern-Topping und der Mozzarella Kugeln dazuaddieren.</p>
+                    </li>
+                    <li>
+                        <h3>7. Schritt</h3>
+                        <p>Die Avocado Würfeln für 3 min im Ofen unter 80° backen, und dann oben auf dem Salat darauf machen.</p>
+                    </li>
+                    <li>
+                        <h3>8. Schritt</h3>
+                        <p>Olivenöl bei wunsch kann man darauf noch.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="madeBySection"> 
+            <h4>Rezept erstellt von:</h4>
+            <div class="authorContainer">
+                <img src="./img/AbdulRazak.jpg" alt="Profilbild des Autors">
+                <p>Mohamad AbdulRazak Samouneh</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+
+<script src="./calculate.js"></script>
+
+</html>

@@ -1,0 +1,457 @@
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+}
+
+.first-section {
+    background-image: url(./img/hero_bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 160px;
+}
+
+nav{
+    height: 112px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 160px;
+}
+
+.logo {
+    height: 64px;
+    width: 64px;
+}
+
+.buttons {
+    display: flex;
+    gap: 24px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.buttons a {
+    color: white;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.buttons a:hover {
+    color: #9F0908;
+    cursor: pointer;
+}
+
+.tel-button {
+    background-color: #9F0908;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-color: white;
+    border-style: solid;
+    width: 240px;
+    height: 40px;
+}
+
+.tel-button p {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.tel-button:hover {
+    background-color: #e10101;
+    cursor: pointer;
+    border-color: black;
+}
+
+.phone-logo {
+    height: 32px;
+    object-fit: cover;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 96px;
+    text-align: center;
+}
+
+span {
+    font-size: 24px;
+    text-align: center;
+}
+
+.section {
+    padding: 120px 160px;
+}
+
+h2 {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    color: #9F0908;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 64px;
+}
+
+p {
+    font-family: "Economica", serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 56px;
+    text-align: center;
+}
+
+.order-steps {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.order-steps img {
+    width: 128px;
+    margin-bottom: 16px;
+}
+
+.order-steps div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.ramen{
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    margin-bottom: 56px;
+}
+
+.ramen-reversed {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+.last-ramen {
+    margin-bottom: 0;
+}
+
+#menu {
+    background-image: url(./img/section_our_menu_bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#menu img {
+    width: 352px;
+    height: 352px;
+}
+
+h3 {
+    font-family: "Economica", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    margin-bottom: 16px;
+    margin-top: 0;
+}
+
+table {
+    font-size: 32px;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    color: #675E54;
+}
+
+tr td:first-child {
+    padding-right: 184px;
+}
+
+.address-heading {
+    margin-top: 96px;
+    margin-bottom: 0;
+}
+
+#location {
+    padding: 0;
+}
+
+#location div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+    margin-bottom: 64px;
+}
+
+.map-marker {
+    height: 24px;
+    width: 24px;
+    margin-right: 16px;
+    object-fit: contain;
+}
+
+.address {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 24px;
+    margin: 0;
+}
+
+.google-map {
+    width: 100%;
+    height: 500px;
+}
+
+.footer {
+    background-color: #0A141E;
+    height: 144px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 160px;
+}
+
+.logo-with-text {
+    height: 44px;
+}
+.footer-logo{
+    display: none;
+}
+.social-media {
+    display: flex;
+    gap: 16px;
+}
+.social-media a:hover {
+    filter: brightness(120%);
+    cursor: pointer;
+    transition: filter 0.3s;
+}
+.social-media img {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 1160px) {
+    /* Style adjustments for Tablets */
+    .skip-nav-buttons-on-mobile{
+        display: none;
+    }
+    .first-section{
+        padding: 0 24px;
+    }
+    nav{
+        padding: 0 24px;
+    }
+    .phone-logo {
+        height: 24px;
+    }
+    .tel-button{
+        padding: 8px;
+        width: 240px;
+        height: 30px;
+    }
+    .tel-button p {
+        font-size: 20px;
+    }
+    h1{
+        font-size: 72px;
+    }
+    span{
+        font-size: 20px;
+    }
+    .section{
+        padding: 96px 24px;
+    }
+    h2{
+        font-size: 64px;
+        margin-bottom: 48px;
+    }
+    .order-steps img{
+        width: 112px;
+        margin-bottom: 8px;
+    }
+    p {
+        font-size: 32px;
+    }
+    .ramen {
+        gap: 24px;
+        margin-bottom: 32px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+    table {
+        font-size: 24px;
+    }
+    tr td:first-child {
+        padding-right: 128px;
+    }
+    #location div {
+        margin-bottom: 48px;
+    }
+    .address {
+        font-size: 20px;
+    }
+    .footer {
+        padding: 0 24px;
+    }
+}
+
+
+@media (max-width: 740px) {
+    /* Style adjustments for Tablets */
+    .first-section{
+        padding: 0 16px;
+    }
+    nav{
+        padding: 0 16px;
+        height: 64px;
+    }
+    .phone-logo {
+        height: 20px;
+    }
+    .logo {
+        height: 40px;
+        width: 40px;
+    }
+    .tel-button{
+        padding: 4px;
+        width: 160px;
+    }
+    .tel-button p {
+        font-size: 16px;
+    }
+    h1{
+        font-size: 44px;
+    }
+    span{
+        font-size: 16px;
+    }
+
+    .section{
+        padding: 72px 16px;
+    }
+    h2{
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+    .order-steps {
+        display: flex;
+        flex-direction: column;
+    }
+    .ramen{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+    #menu img{
+        width: 352px;
+        height: 352px;
+    }
+    tr td:first-child {
+        padding-right: 156px;
+    }
+    #location div {
+        margin-bottom: 40px;
+        padding: 0 16px;
+    }
+    .address {
+        font-size: 16px;
+    }
+
+    .address-heading {
+        margin-top: 72px;
+        margin-bottom: 0;
+    }
+
+    .map-marker {
+        height: 32px;
+        margin-right: 2px;
+        object-fit: contain;
+    }
+
+    .footer {
+        height: 86px;
+        padding: 0 16px;
+    }
+
+    .logo-with-text {
+        display: none;
+    }
+    .social-media img {
+        width: 32px;
+        height: 32px;
+    }
+    .footer-logo{
+        display: block;
+        height: 40px;
+    }
+    @media (max-width: 400px) {
+        #menu img{
+            width: 288px;
+            height: 288px;
+        }
+        tr td:first-child {
+            padding-right: 80px;
+        }
+    }
+    @media (max-width: 370px) {
+        h1{
+            font-size: 32px;
+        }
+        span{
+            font-size: 16px;
+        }
+        h2{
+            font-size: 32px;
+            margin-bottom: 24px;
+        }
+        p {
+            font-size: 24px;
+        }
+        table {
+            font-size: 16px;
+        }
+        #location div {
+            margin-bottom: 24px;
+        }
+        .address {
+            font-size: 8px;
+        }
+        h3 {
+            font-size: 32px;
+        }
+        tr td:first-child {
+            padding-right: 64px;
+        }
+    }
+}

@@ -1,0 +1,104 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+main h1{
+    color: green;
+}
+.positionContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.contactLayout {
+  position: relative;
+  width: 400px;
+  height: 520px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid;
+  background-color: rgb(214, 212, 212);
+}
+.contactField {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contactInput {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input {
+  width: 390px;
+  padding: 5px;
+  border: 2px solid;
+  border-radius: 8px;
+}
+
+.nachricht {
+  height: 250px;
+  line-height: 1;
+  text-align: left;
+  border: 2px solid;
+  border-radius: 8px;
+  padding: 5px;
+}
+.contactButton{
+    display: flex;
+    justify-content: center;
+}
+.contactButton input{
+    width: 120px;
+    height: 25px;
+    background-color: rgb(14, 172, 14);
+    border: 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .contactLayout{
+        width: 300px;
+        height: 430px;
+    }
+    input {
+        width: 280px;
+    }
+    .nachricht{
+        width: 275px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 400px) {
+    h1{
+        font-size: 20px;
+    }
+    label{
+        font-size: 15px;
+    }
+    .contactLayout{
+        width: 250px;
+        height: 400px;
+    }
+    input {
+        width: 220px;
+    }
+    .nachricht{
+        width: 220px;
+        height: 150px;
+    }
+}
+
